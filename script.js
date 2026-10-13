@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
    Po wgraniu strony na GitHub wklej tu pełny link do pliku .exe, np. z Releases:
    https://github.com/TWOJA-NAZWA/multiverse/releases/latest/download/Multiverse-1.0.0-win64.exe
    ===================================================================== */
-const DOWNLOAD_URL = ""; // <-- wklej tu pełny link do .exe
+const DOWNLOAD_URL = "https://github.com/77Waldek/Multiverse/releases/download/v1.0.0/Multiverse.exe"; // <-- wklej tu pełny link do .exe
 
 document.addEventListener("DOMContentLoaded", function () {
     const winBtn = document.getElementById("download-win-btn");
