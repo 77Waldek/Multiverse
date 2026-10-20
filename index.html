@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiverse — Dziel się głosem z innymi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Multiverse" class="logo-img">
+                <span class="logo-text">Multiverse</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features" data-i18n="nav.features">Funkcje</a></li>
+                <li><a href="#compare" data-i18n="nav.compare">Porównanie</a></li>
+                <li><a href="#download" data-i18n="nav.download">Pobierz</a></li>
+                <li><a href="#donate" data-i18n="nav.donate">Donate</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="lang-btn" class="lang-btn" title="Zmiana języka / Switch language">EN</button>
+                <a href="#download" class="btn btn-primary btn-nav" data-i18n="nav.downloadBtn">Pobierz</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">Dziel się głosem z innymi</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    Program, który dał ci stwórca. Prosty, bez reklam, bez szpiegowania, łatwy.
+                    Najlepsza jakość dźwięku, solidny kod i minimalne zużycie zasobów.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary btn-lg" data-i18n="hero.downloadBtn">Pobierz za darmo</a>
+                    <a href="#features" class="btn btn-outline btn-lg" data-i18n="hero.featuresBtn">Zobacz funkcje</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">&lt;20ms</span>
+                        <span class="stat-label" data-i18n="hero.stat1">Latencja</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">~20MB</span>
+                        <span class="stat-label" data-i18n="hero.stat2">RAM</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">64kbps</span>
+                        <span class="stat-label" data-i18n="hero.stat3">Jakość CD</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="hero-mockup.png" alt="Multiverse UI" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-i18n="features.title">Dlaczego Multiverse?</h2>
+            <p class="section-subtitle" data-i18n="features.subtitle">Zbudowany od zera pod kątem wydajności i jakości</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="icon-speed.png" alt="Szybkość">
+                    </div>
+                    <h3 data-i18n="features.f1.title">Ultra niska latencja</h3>
+                    <p data-i18n="features.f1.text">Mniej niż 20 ms opóźnienia dzięki protokołowi UDP i kodekowi Opus 1.6 (48 kHz, 20 ms ramki, FEC). Idealne do gier e-sportowych.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="icon-lightweight.png" alt="Lekki">
+                    </div>
+                    <h3 data-i18n="features.f2.title">6x lżejszy niż Discord</h3>
+                    <p data-i18n="features.f2.text">Zajmuje tylko ~20 MB RAM. Zero obciążenia CPU w tle. Reszta zasobów idzie do Twojej gry.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="icon-secure.png" alt="Bezpieczny">
+                    </div>
+                    <h3 data-i18n="features.f3.title">Szyfrowanie E2E</h3>
+                    <p data-i18n="features.f3.text">ChaCha20-Poly1305 — takie samo szyfrowanie jak w Signal. Każdy pakiet audio jest szyfrowany end-to-end.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="icon-server.png" alt="Self-hosted">
+                    </div>
+                    <h3 data-i18n="features.f4.title">Serwer na każdym PC</h3>
+                    <p data-i18n="features.f4.text">Tryb serwera (do 7 osób), tryb P2P host/klient, oraz klient GUI (tkinter + PyQt6). Bez chmur, bez abonamentów.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="icon-p2p.png" alt="P2P">
+                    </div>
+                    <h3 data-i18n="features.f5.title">Tryb P2P + kody NV1</h3>
+                    <p data-i18n="features.f5.text">Połączenie bezpośrednie bez serwera. Kody zaproszeń NV1 — jeden string zamiast IP + port + hasła. Działa nawet w LAN bez internetu.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="icon-record.png" alt="Czysta mowa">
+                    </div>
+                    <h3 data-i18n="features.f6.title">Czysta mowa, zero echa</h3>
+                    <p data-i18n="features.f6.text">AEC (adaptacyjny filtr MDF), AGC, redukcja szumów (Wiener spectral gate), eliminacja klików klawiatury. Twój głos jest czysty.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="icon-server.png" alt="Sieć">
+                    </div>
+                    <h3 data-i18n="features.f7.title">UPnP + STUN + LAN</h3>
+                    <p data-i18n="features.f7.text">Automatyczne otwieranie portu UPnP, STUN do znalezienia adresu publicznego, oraz wykrywanie pokoje w LAN. Połączenie bez konfiguracji.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="icon-p2p.png" alt="PTT">
+                    </div>
+                    <h3 data-i18n="features.f8.title">Push-to-Talk (PTT)</h3>
+                    <p data-i18n="features.f8.text">Globalny skrót klawiszowy — mikrofon otwiera się tylko, gdy trzymasz klawisz. Działa w tle, nawet gdy gra pełnoekranowa.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="icon-speed.png" alt="Jitter">
+                    </div>
+                    <h3 data-i18n="features.f9.title">Jitter Buffer + PLC</h3>
+                    <p data-i18n="features.f9.text">Bufor jitter z maskowaniem strat (PLC) i sortowaniem pakietów. Odporność na gubienie pakietów dzięki FEC i redundancyjności.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="icon-lightweight.png" alt="Czat">
+                    </div>
+                    <h3 data-i18n="features.f10.title">Czat tekstowy + lista znajomych</h3>
+                    <p data-i18n="features.f10.text">Dwukierunkowy czat obok logu zdarzeń. Lista znajomych zapisywana w config.json — dwuklik łączy się automatycznie.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="icon-record.png" alt="Statystyki">
+                    </div>
+                    <h3 data-i18n="features.f11.title">Statystyki + auto-reconnect</h3>
+                    <p data-i18n="features.f11.text">Ping, utrata pakietów, wysłane/odebrane dane na żywo. Wykrycie zerwanego łącza i automatyczne ponowienie połączenia (watchdog).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="icon-secure.png" alt="Tray">
+                    </div>
+                    <h3 data-i18n="features.f12.title">Ikona w zasobniku + GUI PyQt6</h3>
+                    <p data-i18n="features.f12.text">Minimalizacja do tray z powiadomieniami dźwiękowymi. Nowoczesny interfejs PyQt6 z motywem TS3, animacjami i obsługą grafik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="compare" class="compare">
+        <div class="container">
+            <h2 class="section-title" data-i18n="compare.title">Porównanie z konkurencją</h2>
+            <div class="compare-table-wrapper">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="compare.col1">Cecha</th>
+                            <th class="highlight">Multiverse</th>
+                            <th>TeamSpeak 3</th>
+                            <th>Mumble</th>
+                            <th>Discord</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-i18n="compare.r1">RAM (klient)</td>
+                            <td class="highlight">~20 MB</td>
+                            <td>~50 MB</td>
+                            <td>~20 MB</td>
+                            <td>~200 MB</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="compare.r2">Latencja</td>
+                            <td class="highlight">&lt;20 ms</td>
+                            <td>20-40 ms</td>
+                            <td>&lt;20 ms</td>
+                            <td>50-100 ms</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="compare.r3">Open source</td>
+                            <td class="highlight" data-i18n="yes">Tak</td>
+                            <td data-i18n="no">Nie</td>
+                            <td data-i18n="yes">Tak</td>
+                            <td data-i18n="no">Nie</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="compare.r4">Self-hosted</td>
+                            <td class="highlight" data-i18n="yes">Tak</td>
+                            <td data-i18n="yes">Tak</td>
+                            <td data-i18n="yes">Tak</td>
+                            <td data-i18n="no">Nie</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="compare.r5">Szyfrowanie</td>
+                            <td class="highlight" data-i18n="yes">Tak</td>
+                            <td data-i18n="yes">Tak</td>
+                            <td data-i18n="yes">Tak</td>
+                            <td data-i18n="yes">Tak</td>
+                        </tr>
+                        <tr>
+                            <td>P2P mode</td>
+                            <td class="highlight" data-i18n="yes">Tak</td>
+                            <td data-i18n="no">Nie</td>
+                            <td data-i18n="no">Nie</td>
+                            <td data-i18n="no">Nie</td>
+                        </tr>
+                        <tr>
+                            <td>Kody zaproszeń</td>
+                            <td class="highlight" data-i18n="yes">Tak (NV1)</td>
+                            <td data-i18n="no">Nie</td>
+                            <td data-i18n="no">Nie</td>
+                            <td data-i18n="no">Nie</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="compare.r6">Cena</td>
+                            <td class="highlight" data-i18n="free">Darmowy</td>
+                            <td data-i18n="free">Darmowy</td>
+                            <td data-i18n="free">Darmowy</td>
+                            <td data-i18n="free">Darmowy</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title" data-i18n="download.title">Pobierz Multiverse</h2>
+            <p class="section-subtitle" data-i18n="download.subtitle">Darmowy komunikator głosowy dla Windows</p>
+            <div class="download-buttons">
+                <a id="download-win-btn" href="https://github.com/77Waldek/Multiverse/releases/download/v1.0.0/Multiverse-1.0.0-win64.exe" class="btn btn-primary btn-lg">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 12V6.75l6-1.32v6.48L3 12zm0 6.75l6 1.32v-6.48l-6 1.32v3.84zm7 1.44l6-1.32v-6.48l-6 1.32v6.48zm7-1.32l6-1.32v-6.48l-6 1.32v6.48z"/></svg>
+                    <span data-i18n="download.winBtn">Pobierz dla Windows</span>
+                </a>
+                <span class="btn btn-outline btn-lg btn-disabled" aria-disabled="true">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <span data-i18n="download.linuxBtn">Linux — wkrótce</span>
+                </span>
+            </div>
+            <p class="download-note" data-i18n="download.note">Windows 10/11 · wersja 1.0.0 · bez instalacji, bez Pythona</p>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="donate">
+        <div class="container">
+            <h2 class="section-title" data-i18n="donate.title">Wesprzyj projekt</h2>
+            <p class="section-subtitle" data-i18n="donate.subtitle">
+                Podoba Ci się Multiverse? Twój datek pomaga w dalszym rozwoju — bez reklam, bez szpiegowania, dla wszystkich.
+            </p>
+            <a id="donate-btn" href="#" target="_blank" rel="noopener" class="btn btn-donate btn-lg">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <span data-i18n="donate.btn">Przekaż datek przez PayPal</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Kontakt</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Masz pytania? Napisz do nas!</p>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" data-i18n-placeholder="contact.name" placeholder="Twoje imię" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" data-i18n-placeholder="contact.email" placeholder="Twój email" required>
+                </div>
+                <div class="form-group">
+                    <textarea data-i18n-placeholder="contact.message" placeholder="Wiadomość" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" data-i18n="contact.submit">Wyślij</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Multiverse" class="logo-img">
+                    <span>Multiverse</span>
+                </div>
+                <p data-i18n="footer.copyright">&copy; 2026 Multiverse. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
