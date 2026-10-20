@@ -28,13 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* =====================================================================
-   DOWNLOAD — TU WPISZ LINK DO PLIKU .EXE (po publikacji na GitHub)
-   =====================================================================
-   Zostaw puste = działa lokalny link (downloads/Multiverse-1.0.0-win64.exe).
-   Po wgraniu strony na GitHub wklej tu pełny link do pliku .exe, np. z Releases:
-   https://github.com/TWOJA-NAZWA/multiverse/releases/latest/download/Multiverse-1.0.0-win64.exe
+   POBIERANIE — aktualny plik wydania 1.2 opublikowany na GitHub Releases.
+   Gdy pojawi się nowsza wersja lub zmieni nazwa pliku, zaktualizuj link.
    ===================================================================== */
-const DOWNLOAD_URL = ""; // <-- wklej tu pełny link do .exe
+const DOWNLOAD_URL = "https://github.com/77Waldek/Multiverse/releases/download/1.2/Multiverse.exe"; // Plik z GitHub Releases, wersja 1.2
 
 document.addEventListener("DOMContentLoaded", function () {
     const winBtn = document.getElementById("download-win-btn");
@@ -53,7 +50,7 @@ const I18N = {
         "nav.contact": "Kontakt",
         "nav.downloadBtn": "Pobierz",
         "hero.title": "Dziel się głosem z innymi",
-        "hero.subtitle": "Program, który dał ci stwórca. Prosty, bez reklam, bez szpiegowania, łatwy. Najlepsza jakość dźwięku, solidny kod i minimalne zużycie zasobów.",
+        "hero.subtitle": "Głos, który dał Ci Stwórca. Podziel się nim z innymi. Prosty program, bez reklam, bez szpiegowania, łatwy w obsłudze. Najlepsza jakość dźwięku, solidny kod i minimalne zużycie zasobów.",
         "hero.downloadBtn": "Pobierz za darmo",
         "hero.featuresBtn": "Zobacz funkcje",
         "hero.stat1": "Latencja",
@@ -112,7 +109,7 @@ const I18N = {
         "download.subtitle": "Darmowy komunikator głosowy dla Windows",
         "download.winBtn": "Pobierz dla Windows",
         "download.linuxBtn": "Linux — wkrótce",
-        "download.note": "Windows 10/11 · wersja 1.0.0 · bez instalacji, bez Pythona",
+        "download.note": "Windows 10/11 · wersja 1.2 · bez instalacji, bez Pythona",
         "donate.title": "Wesprzyj projekt",
         "donate.subtitle": "Podoba Ci się Multiverse? Twój datek pomaga w dalszym rozwoju — bez reklam, bez szpiegowania, dla wszystkich.",
         "donate.btn": "Przekaż datek przez PayPal",
@@ -133,7 +130,7 @@ const I18N = {
         "nav.contact": "Contact",
         "nav.downloadBtn": "Download",
         "hero.title": "Share your voice with others",
-        "hero.subtitle": "A gift from the creator. A simple program with no ads, no spying, easy to use. The best sound quality, solid code, and minimal resource usage.",
+        "hero.subtitle": "A voice given to you by the Creator. Share it with others. A simple, easy-to-use program with no ads and no spying. Excellent audio quality, solid code, and minimal resource usage.",
         "hero.downloadBtn": "Download free",
         "hero.featuresBtn": "See features",
         "hero.stat1": "Latency",
@@ -192,7 +189,7 @@ const I18N = {
         "download.subtitle": "Free voice chat for Windows",
         "download.winBtn": "Download for Windows",
         "download.linuxBtn": "Linux — soon",
-        "download.note": "Windows 10/11 · version 1.0.0 · standalone, no Python needed",
+        "download.note": "Windows 10/11 · version 1.2 · standalone, no Python needed",
         "donate.title": "Support the project",
         "donate.subtitle": "Like Multiverse? Your donation keeps it going — no ads, no spying, for everyone.",
         "donate.btn": "Donate via PayPal",
