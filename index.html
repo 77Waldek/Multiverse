@@ -59,7 +59,50 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="hero-mockup.png" alt="Multiverse UI" class="hero-img">
+                <!-- Tekstowy podgląd zamiast obrazu PNG z nieczytelnymi znakami. -->
+                <div class="app-preview" role="group" aria-label="Przykładowy interfejs Multiverse">
+                    <div class="preview-topbar">
+                        <div class="preview-brand"><img src="logo.png" alt="" width="26" height="26"> Multiverse</div>
+                        <div class="preview-online"><span class="preview-online-dot"></span><span data-i18n="preview.online">Online</span></div>
+                    </div>
+                    <div class="preview-body">
+                        <aside class="preview-sidebar">
+                            <div class="preview-caption" data-i18n="preview.rooms">POKOJE GŁOSOWE</div>
+                            <div class="preview-room active">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9v6M9 5v14M13 8v8M17 4v16M21 9v6"/></svg>
+                                <span data-i18n="preview.general">Ogólny</span><small>3</small>
+                            </div>
+                            <div class="preview-room">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12M12 6v12"/><circle cx="12" cy="12" r="9"/></svg>
+                                <span>Gaming</span>
+                            </div>
+                            <div class="preview-room">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13M9 9l12-2"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                                <span data-i18n="preview.music">Muzyka</span>
+                            </div>
+                            <div class="preview-sidebar-foot"><span class="preview-online-dot"></span><span data-i18n="preview.secure">Szyfrowane połączenie</span></div>
+                        </aside>
+                        <div class="preview-main">
+                            <div class="preview-header">
+                                <div><span class="preview-caption" data-i18n="preview.channel">KANAŁ GŁOSOWY</span><strong data-i18n="preview.general">Ogólny</strong></div>
+                                <span class="preview-live"><span class="preview-online-dot"></span><span data-i18n="preview.connected">Połączono</span></span>
+                            </div>
+                            <div class="preview-users">
+                                <div class="preview-user"><span class="preview-avatar avatar-blue">W</span><span class="preview-user-info"><strong>Waldek</strong><small data-i18n="preview.speaking">Mówi teraz</small></span><span class="preview-audio-bars active" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+                                <div class="preview-user"><span class="preview-avatar avatar-purple">K</span><span class="preview-user-info"><strong>Kasia</strong><small data-i18n="preview.listening">Słucha</small></span><span class="preview-audio-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+                                <div class="preview-user"><span class="preview-avatar avatar-green">A</span><span class="preview-user-info"><strong>Adam</strong><small data-i18n="preview.listening">Słucha</small></span><span class="preview-audio-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+                            </div>
+                            <div class="preview-ping"><span><span class="preview-online-dot"></span><span data-i18n="preview.stable">Stabilne połączenie</span></span><strong>18 ms</strong></div>
+                        </div>
+                    </div>
+                    <div class="preview-controls">
+                        <span class="preview-avatar avatar-blue">W</span><span class="preview-identity"><strong>Waldek</strong><small data-i18n="preview.connected">Połączono</small></span>
+                        <span class="preview-control" aria-label="Mikrofon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg></span>
+                        <span class="preview-control" aria-label="Słuchawki"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 14v-3a9 9 0 0 1 18 0v3M3 14h4v7H5a2 2 0 0 1-2-2v-5ZM21 14h-4v7h2a2 2 0 0 0 2-2v-5Z"/></svg></span>
+                        <span class="preview-disconnect" data-i18n="preview.disconnect">Rozłącz</span>
+                    </div>
+                </div>
+                <span class="preview-disclaimer" data-i18n="preview.illustration">Wizualizacja interfejsu programu</span>
             </div>
         </div>
     </section>
@@ -71,86 +114,62 @@
             <p class="section-subtitle" data-i18n="features.subtitle">Zbudowany od zera pod kątem wydajności i jakości</p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon-speed.png" alt="Szybkość">
-                    </div>
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-10 12h9l-1 8 10-12h-9l1-8Z"/></svg></div>
                     <h3 data-i18n="features.f1.title">Ultra niska latencja</h3>
                     <p data-i18n="features.f1.text">Mniej niż 20 ms opóźnienia dzięki protokołowi UDP i kodekowi Opus 1.6 (48 kHz, 20 ms ramki, FEC). Idealne do gier e-sportowych.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon-lightweight.png" alt="Lekki">
-                    </div>
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16a9 9 0 1 1 15 0"/><path d="m12 13 4-5"/><path d="M8 18h8"/></svg></div>
                     <h3 data-i18n="features.f2.title">6x lżejszy niż Discord</h3>
                     <p data-i18n="features.f2.text">Zajmuje tylko ~20 MB RAM. Zero obciążenia CPU w tle. Reszta zasobów idzie do Twojej gry.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon-secure.png" alt="Bezpieczny">
-                    </div>
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div>
                     <h3 data-i18n="features.f3.title">Szyfrowanie E2E</h3>
                     <p data-i18n="features.f3.text">ChaCha20-Poly1305 — takie samo szyfrowanie jak w Signal. Każdy pakiet audio jest szyfrowany end-to-end.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon-server.png" alt="Self-hosted">
-                    </div>
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="8" rx="2"/><rect x="3" y="13" width="18" height="8" rx="2"/><path d="M7 7h.01M7 17h.01M11 7h7M11 17h7"/></svg></div>
                     <h3 data-i18n="features.f4.title">Serwer na każdym PC</h3>
                     <p data-i18n="features.f4.text">Tryb serwera (do 7 osób), tryb P2P host/klient, oraz klient GUI (tkinter + PyQt6). Bez chmur, bez abonamentów.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon-p2p.png" alt="P2P">
-                    </div>
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="m7 7 4 9m6-9-4 9M7 6h10"/></svg></div>
                     <h3 data-i18n="features.f5.title">Tryb P2P + kody NV1</h3>
                     <p data-i18n="features.f5.text">Połączenie bezpośrednie bez serwera. Kody zaproszeń NV1 — jeden string zamiast IP + port + hasła. Działa nawet w LAN bez internetu.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon-record.png" alt="Czysta mowa">
-                    </div>
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg></div>
                     <h3 data-i18n="features.f6.title">Czysta mowa, zero echa</h3>
                     <p data-i18n="features.f6.text">AEC (adaptacyjny filtr MDF), AGC, redukcja szumów (Wiener spectral gate), eliminacja klików klawiatury. Twój głos jest czysty.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon-server.png" alt="Sieć">
-                    </div>
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a15 15 0 0 1 20 0M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1" fill="currentColor" stroke="none"/></svg></div>
                     <h3 data-i18n="features.f7.title">UPnP + STUN + LAN</h3>
                     <p data-i18n="features.f7.text">Automatyczne otwieranie portu UPnP, STUN do znalezienia adresu publicznego, oraz wykrywanie pokoje w LAN. Połączenie bez konfiguracji.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon-p2p.png" alt="PTT">
-                    </div>
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v5M3.5 6.5h5M18 15v5m-2.5-2.5h5"/><path d="M8 15a4 4 0 0 1 8 0M8 11a6 6 0 0 1 8 0"/></svg></div>
                     <h3 data-i18n="features.f8.title">Push-to-Talk (PTT)</h3>
                     <p data-i18n="features.f8.text">Globalny skrót klawiszowy — mikrofon otwiera się tylko, gdy trzymasz klawisz. Działa w tle, nawet gdy gra pełnoekranowa.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon-speed.png" alt="Jitter">
-                    </div>
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-7 5 14 3-7h5"/></svg></div>
                     <h3 data-i18n="features.f9.title">Jitter Buffer + PLC</h3>
                     <p data-i18n="features.f9.text">Bufor jitter z maskowaniem strat (PLC) i sortowaniem pakietów. Odporność na gubienie pakietów dzięki FEC i redundancyjności.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon-lightweight.png" alt="Czat">
-                    </div>
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4.7-3.6 8.5-8 8.5a8.2 8.2 0 0 1-4-.9L3 21l1.8-4.3A8.7 8.7 0 0 1 4 12c0-4.7 3.6-8.5 8-8.5s8 3.3 8 8Z"/><path d="M8 11h8M8 14h5"/></svg></div>
                     <h3 data-i18n="features.f10.title">Czat tekstowy + lista znajomych</h3>
                     <p data-i18n="features.f10.text">Dwukierunkowy czat obok logu zdarzeń. Lista znajomych zapisywana w config.json — dwuklik łączy się automatycznie.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon-record.png" alt="Statystyki">
-                    </div>
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="6" y="12" width="3" height="6" rx="0.5"/><rect x="11" y="8" width="3" height="10" rx="0.5"/><rect x="16" y="5" width="3" height="13" rx="0.5"/></svg></div>
                     <h3 data-i18n="features.f11.title">Statystyki + auto-reconnect</h3>
                     <p data-i18n="features.f11.text">Ping, utrata pakietów, wysłane/odebrane dane na żywo. Wykrycie zerwanego łącza i automatyczne ponowienie połączenia (watchdog).</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon-secure.png" alt="Tray">
-                    </div>
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 8h10M7 12h7"/></svg></div>
                     <h3 data-i18n="features.f12.title">Ikona w zasobniku + GUI PyQt6</h3>
                     <p data-i18n="features.f12.text">Minimalizacja do tray z powiadomieniami dźwiękowymi. Nowoczesny interfejs PyQt6 z motywem TS3, animacjami i obsługą grafik.</p>
                 </div>
