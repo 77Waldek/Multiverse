@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiverse — Dziel się głosem z innymi</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/webp" href="multiverse-logo.webp">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="#" class="logo">
-                <img src="logo.png" alt="Multiverse" class="logo-img">
+                <img src="multiverse-logo.webp" alt="Multiverse" class="logo-img">
                 <span class="logo-text">Multiverse</span>
             </a>
             <ul class="nav-links">
@@ -58,50 +58,10 @@
                 </div>
             </div>
             <div class="hero-image">
-                <!-- Tekstowy podgląd zamiast obrazu PNG z nieczytelnymi znakami. -->
-                <div class="app-preview" role="group" aria-label="Przykładowy interfejs Multiverse">
-                    <div class="preview-topbar">
-                        <div class="preview-brand"><img src="logo.png" alt="" width="26" height="26"> Multiverse</div>
-                        <div class="preview-online"><span class="preview-online-dot"></span><span data-i18n="preview.online">Online</span></div>
-                    </div>
-                    <div class="preview-body">
-                        <aside class="preview-sidebar">
-                            <div class="preview-caption" data-i18n="preview.rooms">POKOJE GŁOSOWE</div>
-                            <div class="preview-room active">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9v6M9 5v14M13 8v8M17 4v16M21 9v6"/></svg>
-                                <span data-i18n="preview.general">Ogólny</span><small>3</small>
-                            </div>
-                            <div class="preview-room">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12M12 6v12"/><circle cx="12" cy="12" r="9"/></svg>
-                                <span>Gaming</span>
-                            </div>
-                            <div class="preview-room">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13M9 9l12-2"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-                                <span data-i18n="preview.music">Muzyka</span>
-                            </div>
-                            <div class="preview-sidebar-foot"><span class="preview-online-dot"></span><span data-i18n="preview.secure">Szyfrowane połączenie</span></div>
-                        </aside>
-                        <div class="preview-main">
-                            <div class="preview-header">
-                                <div><span class="preview-caption" data-i18n="preview.channel">KANAŁ GŁOSOWY</span><strong data-i18n="preview.general">Ogólny</strong></div>
-                                <span class="preview-live"><span class="preview-online-dot"></span><span data-i18n="preview.connected">Połączono</span></span>
-                            </div>
-                            <div class="preview-users">
-                                <div class="preview-user"><span class="preview-avatar avatar-blue">W</span><span class="preview-user-info"><strong>Waldek</strong><small data-i18n="preview.speaking">Mówi teraz</small></span><span class="preview-audio-bars active" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
-                                <div class="preview-user"><span class="preview-avatar avatar-purple">K</span><span class="preview-user-info"><strong>Kasia</strong><small data-i18n="preview.listening">Słucha</small></span><span class="preview-audio-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
-                                <div class="preview-user"><span class="preview-avatar avatar-green">A</span><span class="preview-user-info"><strong>Adam</strong><small data-i18n="preview.listening">Słucha</small></span><span class="preview-audio-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
-                            </div>
-                            <div class="preview-ping"><span><span class="preview-online-dot"></span><span data-i18n="preview.stable">Stabilne połączenie</span></span><strong>18 ms</strong></div>
-                        </div>
-                    </div>
-                    <div class="preview-controls">
-                        <span class="preview-avatar avatar-blue">W</span><span class="preview-identity"><strong>Waldek</strong><small data-i18n="preview.connected">Połączono</small></span>
-                        <span class="preview-control" aria-label="Mikrofon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg></span>
-                        <span class="preview-control" aria-label="Słuchawki"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 14v-3a9 9 0 0 1 18 0v3M3 14h4v7H5a2 2 0 0 1-2-2v-5ZM21 14h-4v7h2a2 2 0 0 0 2-2v-5Z"/></svg></span>
-                        <span class="preview-disconnect" data-i18n="preview.disconnect">Rozłącz</span>
-                    </div>
-                </div>
-                <span class="preview-disclaimer" data-i18n="preview.illustration">Wizualizacja interfejsu programu</span>
+                <a class="hero-preview-link" href="multiverse-preview.webp" target="_blank" rel="noopener" aria-label="Powiększ zrzut ekranu programu Multiverse">
+                    <img class="hero-img" src="multiverse-preview.webp" alt="Zrzut ekranu Multiverse 1.2 – kanały, czat i statystyki" width="996" height="651">
+                </a>
+                <span class="preview-disclaimer" data-i18n="preview.illustration">Prawdziwy zrzut ekranu programu Multiverse 1.2 · kliknij, aby powiększyć</span>
             </div>
         </div>
     </section>
@@ -312,7 +272,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="logo.png" alt="Multiverse" class="logo-img">
+                    <img src="multiverse-logo.webp" alt="Multiverse" class="logo-img">
                     <span>Multiverse</span>
                 </div>
                 <p data-i18n="footer.copyright">&copy; 2026 Multiverse. Wszelkie prawa zastrzeżone.</p>
